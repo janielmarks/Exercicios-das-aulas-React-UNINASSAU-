@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Bora la praticar!
         </p>
         <a
           className="App-link"
@@ -17,9 +17,34 @@ function App() {
         >
           Learn React
         </a>
+        <MyButton />
+        <AboutPage />
+        
       </header>
     </div>
   );
-}
+  
+
+  }
+
+
+  function MyButton() {
+    return (
+      <button>
+        I'm a button
+      </button>
+    );
+  }
+  
+  
+  function AboutPage() {
+    return (
+      <>
+        <h1>About</h1>
+        <p>Hello there.<br />How do you do?</p>
+      </>
+    );
+  }
+
 
 export default App;
